@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: #333;
+  padding: 20px;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header h1 {
+  margin-right: auto;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*.navbar ul:last-child {
+  margin-right: 0;
+}*/
+.navbar a:hover {
+  color: chartreuse;
+}
+
+.localisation {
+  display: flex;
+  font-family: none;
+  align-items: center;
+  font-size: 9px;
+  padding: 2px;
+  width: 100%;
+  justify-content: center;
+  background: #eaeaea;
+  height: 40px;
+}
+
+.localisation i {
+  margin: 0.5rem;
+  color: red;
+}
+
+.card-project {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 2rem;
+}
+.card-project img {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.card {
+  width: 30%;
+  border-radius: 25px;
+  background: #333;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.card p {
+  color: #fff;
+  font-size: 12px;
+  padding: 0rem 2rem;
+}
+
+.liens a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button ul {
+  list-style-type: none;
+}
+
+.button li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 1rem;
+  border-radius: 25px;
+  background-color: #2f4f4f;
+  width: 150px;
+  height: 45px;
+}
+
+.liens a:hover {
+  color: chartreuse;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.main-containner {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  background: #333;
+  border: 3px solid #2f4f4f;
+  color: #fff;
+  border-radius: 10px;
+}
+.about-me img {
+  border-radius: 60%;
+  width: 250px;
+  height: 250px;
+  border: 5px, solid;
+  color: red;
+}
+
+.about-me p {
+  display: flex;
+  position: absolute;
+  left: 270px;
+  margin-top: 4rem;
+  width: auto;
+}
+
+.about-me h3 {
+  display: flex;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    gap: 2rem;
+    height: 52px;
+  }
+  .header h1 {
+    font-size: 15px;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+  }
+  .navbar li {
+    margin-right: 0;
+    text-align: center;
+  }
+  .burger-menu {
+    display: block;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #nav-toggle:checked + .burger-menu {
+    color: #ff7f0e; /* Change color when menu is open */
+  }
+  #nav-toggle:checked ~ .navbar {
+    display: flex;
+  }
+  #project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .card-project {
+    flex-direction: column;
+  }
+  .card-project {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: auto;
+    flex-direction: column;
+  }
+  .liens a {
+    padding: 10px 10px;
+  }
+  .button li {
+    width: auto;
+  }
+  #cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  #contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  #about img {
+    width: 100%;
+    height: auto;
+  }
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me h3 {
+    padding: 0rem 1rem;
+    margin-bottom: 0rem;
+  }
+  .about-me p {
+    position: relative;
+    padding-left: 0;
+    width: auto;
+    font-size: 13.5px;
+    margin: 0 auto;
+    padding: 1rem;
+    left: 0;
+  }
+}/*# sourceMappingURL=index.css.map */
