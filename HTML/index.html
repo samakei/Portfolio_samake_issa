@@ -6,34 +6,35 @@
     <title>Portoflio</title>
     <link rel="stylesheet" href="../Styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-<SHA384_HASH>" crossorigin="anonymous">
-
+     <!--    javascript-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
       
-    <header class="header">
-    <h1>Portoflio<br>Développeur Front-end</h1>
-    
    <!-- Ensemble de liens de navigation -->
-    <nav class="navbar">
-    <input type="checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="burger-menu">&#9776;</label>
-        <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#project">Projects</a></li>
-    <li><a href="#cv">CV</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <nav class="navbar" id="myTopnav">
     
-        </ul>
-    </nav>
-    </header>
+    <a href="" class="active"><h1>Portoflio<br>Développeur Front-end</h1></a>
+    <a href="#home">Home</a>
+    <a href="#project">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+   
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+
+</nav>
+    
 
     <div class="localisation">
         <h1><i class="fas fa-map-marker-alt"></i>Lyon, Villefranche Sur Saone</h1>
       </div>
 
     <main class="main-containner">
-        <section id="home">
+        <section id="home" class="section-welme">
         <h2>Bienvenue sur mon portfolio</h2>
         <p>Je suis un développeur web jenior passionné par la création de solutions innovantes.</p>
     </section>
@@ -48,6 +49,10 @@
              <p>Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
                 Booki, une plateforme de réservation de vacances.
              </p>
+
+          
+
+        
              <ul class="liens button">
             <li><a href="https://github.com/samakei/booki-starter-code.git">Liens Github</a></li>
              <li><a href="https://samakei.github.io/booki-starter-code/">Visitez le site</a> </li>
@@ -80,6 +85,7 @@
 
             <article class="card">
              <img src="../assets/Kasa logo.png" alt=""> 
+
               <p>Créez une application web de location immobilière avec React
                  Implémentez le front end de Kasa, une application de location de logements.
                 </p>
@@ -96,7 +102,9 @@
 
     <section id="cv">
         <h2>Discover my CV</h2>
-
+        	<div class="cv-direction">
+		<a class="button"href="../assets/CV-Développeur_web.pdf">Télécharger mon CV</a>
+            </div>
     </section>
 
     
@@ -117,17 +125,32 @@
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <!-- Insérez un formulaire de contact ici -->
+        <!-- formulaire de contact-->
+    <div class="formulaire-container">
+    <form id="contactForm">
+       <h2>Contact</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="lasname">Société:</label>
+      <input type="text" id="lasname" lasname="lasname" required>
+      <label for="telephone">Téléphone:</label>
+      <input type="text" id="telephone" telephone="telephone" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
     </section>
-    
+    <script src="/Javascript/script.js" defer></script>
     <footer>
         <p>&copy; 2024 Mon Portfolio</p>
     </footer>
-    
-    <script src="/Javascript/script.js"></script>
 
-     
     </main>
 </body>
 </html>
