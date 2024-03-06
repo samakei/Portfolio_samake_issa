@@ -1,4 +1,6 @@
 {
   "search-online.search-engine": "Google",
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "window.zoomPerWindow": false,
+  "editor.mouseWheelZoom": true
 }
