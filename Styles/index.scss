@@ -379,17 +379,45 @@ p {
 /**maitrise de langage de programmation**/
 .skills_container .Programming_language .skill_live {
   width: 100%;
-  background-color: #ccc;
+  background-color: #f0f0f0;
+  opacity: 1;
 
 }
-.skill-ninety {
-  background-color: chocolate;
-    height: .5em;
-    width: 90%;
-   opacity: 1;
-   cursor: pointer;
+@keyframes skill-ninety {
+  from {background-color: #ccc;}
+  to {background-color: #e1601a;}
+} 
+
+.skill-ninety{
+ width: 90%;
+ height: .7rem;
+  background-color: #e1601a;
+  animation-name: skill-ninety;
+  animation-duration: 5s;
+  cursor: pointer;
+  color: white;
+   
+  
 }
 
+.skill-ninety_css{
+ width: 90%;
+  height: .7rem;
+  background: rgb(48, 160, 212);
+  animation: slidein 2s inspect($value: 7);
+  animation-timing-function: ease-out;
+  color: white;
+}
+
+@keyframes slidein {
+  from { transform: scale(0);}
+  to {transform: scale(1);}
+  
+}
+
+
+
+/*
 .skill-ninety_css {
    background-color: cornflowerblue;
     height: .5em;
@@ -397,39 +425,62 @@ p {
    opacity: 1;
    cursor: pointer;
 }
+*/
+.progression {
+  display: flex;
+  flex-direction: row;
+ justify-content: right;
+  width: 100%;
+  font-size: 12px;
+  flex-grow: 1;
+}
 
 .skill-seventy {
-  background-color: gold;
-  height: .5rem;
   width: 70%;
+  height: .7rem;
   cursor: pointer;
+  background-color: gold;
+  color: white;
+  
 }
+
 .skill-seventy_react {
  background-color: deepskyblue;
-  height: .5rem;
+  height: .7rem;
   width: 70%;
   cursor: pointer;
+  color: white;
 }
 .skill-fifty {
  background-color: #74a45c;
-  height: .5rem;
+  height: .7rem;
   width: 50%;
   cursor: pointer;
+  color: white;
 }
 .skill-fifty_mysql {
   background-color:  #006282;
-  height: .5rem;
+  height: .7rem;
   width: 50%;
   cursor: pointer;
+  color: white;
 }
 .skill-ninety_github {
    background-color: #171515;
-    height: .5em;
+    height: .7rem;
     width: 90%;
    opacity: 1;
    cursor: pointer;
+   color: white;
 }
 
+
+  
+/*.skill-ninety{
+ cursor: pointer;
+ background-color: #e1601a;
+}
+*/
 /**Formulaire de contacte*/
 .formulaire-container {
   max-width: 600px;
