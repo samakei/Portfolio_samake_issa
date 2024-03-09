@@ -383,49 +383,25 @@ p {
   opacity: 1;
 
 }
-@keyframes skill-ninety {
-  from {background-color: #ccc;}
-  to {background-color: #e1601a;}
-} 
 
 .skill-ninety{
  width: 90%;
  height: .7rem;
-  background-color: #e1601a;
-  animation-name: skill-ninety;
-  animation-duration: 5s;
+ background-color: #e1601a;
   cursor: pointer;
   color: white;
    
-  
 }
 
-.skill-ninety_css{
- width: 90%;
-  height: .7rem;
-  background: rgb(48, 160, 212);
-  animation: slidein 2s inspect($value: 7);
-  animation-timing-function: ease-out;
-  color: white;
-}
-
-@keyframes slidein {
-  from { transform: scale(0);}
-  to {transform: scale(1);}
-  
-}
-
-
-
-/*
 .skill-ninety_css {
    background-color: cornflowerblue;
-    height: .5em;
+    height: .7em;
     width: 90%;
    opacity: 1;
    cursor: pointer;
+   color: white;
 }
-*/
+
 .progression {
   display: flex;
   flex-direction: row;

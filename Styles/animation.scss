@@ -1,0 +1,29 @@
+.skill_live {
+  animation: fillProgress  3s 2 ease-in-out;
+  animation-timing-function: cubic-bezier(.79,.14,.15,.86);
+  animation-fill-mode: both;
+  
+}
+
+/*La @forrègle, écrite @for <variable> from <expression> to <expression>
+ { ... }ou @for <variable> from <expression> through <expression> { ... }, 
+ compte de façon croissante ou décroissante d'un nombre (le résultat de la première expression )
+  à un autre (le résultat de la seconde) et évalue un bloc pour chaque nombre intermédiaire. 
+Chaque numéro en cours de route est attribué au nom de variable donné. Si toest utilisé,
+ le numéro final est exclu ; si throughest utilisé, il est  inclus. */
+
+@for $i from 0 through 6 {
+  .delay-#{$i} {
+    animation-delay: calc(0.5s * $i);
+    animation-duration: 1s;
+  }
+}
+
+@keyframes fillProgress  {
+  0% {
+   width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
