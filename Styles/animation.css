@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .skill_live {
-  animation: fillProgress 3s 2 ease-in-out;
+  animation: fillProgress 3s infinite ease-in-out;
   animation-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);
   animation-fill-mode: both;
 }
@@ -13,37 +13,37 @@ Chaque numéro en cours de route est attribué au nom de variable donné. Si toe
  le numéro final est exclu ; si throughest utilisé, il est  inclus. */
 .delay-0 {
   animation-delay: 0s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-1 {
   animation-delay: 0.5s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-2 {
   animation-delay: 1s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-3 {
   animation-delay: 1.5s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-4 {
   animation-delay: 2s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-5 {
   animation-delay: 2.5s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .delay-6 {
   animation-delay: 3s;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 @keyframes fillProgress {

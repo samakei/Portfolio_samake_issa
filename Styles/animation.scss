@@ -1,5 +1,5 @@
 .skill_live {
-  animation: fillProgress  3s 2 ease-in-out;
+  animation: fillProgress  3s infinite ease-in-out;
   animation-timing-function: cubic-bezier(.79,.14,.15,.86);
   animation-fill-mode: both;
   
@@ -15,7 +15,7 @@ Chaque numéro en cours de route est attribué au nom de variable donné. Si toe
 @for $i from 0 through 6 {
   .delay-#{$i} {
     animation-delay: calc(0.5s * $i);
-    animation-duration: 1s;
+    animation-duration: 10s;
   }
 }
 
