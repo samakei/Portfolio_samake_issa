@@ -17,8 +17,8 @@ body {
 .navbar .active {
   display: flex;
   margin-right: auto;
-  color: #fff;
   gap: 5rem;
+  background: linear-gradient(to left, blue, indigo, orange, red, green, black, skyblue);
 }
 
 .navbar a {
@@ -55,12 +55,16 @@ body {
   display: flex;
   font-family: none;
   align-items: center;
-  font-size: 9px;
+  align-items: center;
+  font-size: 11px;
   padding: 2px;
   width: 100%;
   justify-content: center;
   background: #eaeaea;
   height: 40px;
+}
+.localisation h2 {
+  margin-top: 1rem;
 }
 
 .localisation i {
@@ -173,7 +177,7 @@ section {
 
 /** A propos de moi **/
 #about {
-  background-color: #2e5a5a;
+  background-color: white;
 }
 
 .about-me {
@@ -181,21 +185,22 @@ section {
   width: 100%;
   margin-top: 2rem;
   position: relative;
-  border: 3px solid #2f4f4f;
-  color: #fff;
+  /* border: 1px solid #2f4f4f;
+    color: #fff;*/
   border-radius: 10px;
 }
 .about-me img {
-  border-radius: 60%;
-  width: 250px;
-  height: 250px;
-  border: 5px, solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 230px;
+  border: 5px, solid #2f4f4f;
 }
 
 .about-me p {
   display: flex;
+  font-weight: 500;
   position: absolute;
-  left: 270px;
+  left: 220px;
   margin-top: 4rem;
   width: auto;
 }

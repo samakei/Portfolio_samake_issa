@@ -15,7 +15,7 @@ Chaque numéro en cours de route est attribué au nom de variable donné. Si toe
 @for $i from 0 through 6 {
   .delay-#{$i} {
     animation-delay: calc(0.5s * $i);
-    animation-duration: 10s;
+    animation-duration: 6s;
   }
 }
 
