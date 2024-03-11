@@ -18,7 +18,7 @@ body {
   display: flex;
   margin-right: auto;
   gap: 5rem;
-  background: linear-gradient(to left, blue, indigo, orange, red, green, black, skyblue);
+  background: linear-gradient(to left, blue, indigo, #2f4f4f, orange, red, green, black, rgb(66, 136, 163));
 }
 
 .navbar a {
@@ -63,9 +63,6 @@ body {
   background: #eaeaea;
   height: 40px;
 }
-.localisation h2 {
-  margin-top: 1rem;
-}
 
 .localisation i {
   margin: 0.5rem;
@@ -80,6 +77,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.section-welcome h3 {
+  font-size: 21px;
+}
+
+.section-welcome p {
+  font-size: 14px;
 }
 
 .card-welcome {
@@ -112,6 +117,7 @@ body {
   gap: 30px;
   margin-top: 2rem;
 }
+
 .card-project img {
   width: 100%;
   height: 250px;
@@ -169,6 +175,10 @@ section {
   padding: 50px 20px;
 }
 
+section h4 {
+  font-size: 25px;
+}
+
 /*contenner*/
 .main-containner {
   width: 100%;
@@ -185,15 +195,13 @@ section {
   width: 100%;
   margin-top: 2rem;
   position: relative;
-  /* border: 1px solid #2f4f4f;
-    color: #fff;*/
   border-radius: 10px;
 }
+
 .about-me img {
   border-radius: 50%;
   width: 200px;
   height: 230px;
-  border: 5px, solid #2f4f4f;
 }
 
 .about-me p {
@@ -205,7 +213,7 @@ section {
   width: auto;
 }
 
-.about-me h3 {
+.about-me h4 {
   display: flex;
   padding: 1rem;
 }
@@ -244,7 +252,6 @@ footer {
   .navbar a.icon {
     float: right;
     display: block;
-    margin-right: right;
     padding: 0px 10px 0px;
   }
 }
@@ -286,7 +293,7 @@ footer {
     border-radius: 2px;
     height: 52px;
   }
-  .navbar a.active a {
+  .navbar a {
     margin-left: 0;
   }
   .section-welcome {
@@ -352,7 +359,7 @@ footer {
     flex-direction: column;
     margin-bottom: 0rem;
   }
-  .about-me h3 {
+  .about-me h5 {
     padding: 0rem 1rem;
     margin-bottom: 0rem;
   }
@@ -368,13 +375,17 @@ footer {
   .réseaux-sociaux {
     width: auto;
   }
-  .réseaux-sociaux h4 {
+  .réseaux-sociaux h5 {
     margin-left: 1rem;
   }
   .réseaux-sociaux a {
     margin-right: 1rem;
   }
 }
+#cv h5 {
+  font-size: 22px;
+}
+
 /**Orientation de mon cv**/
 .cv-direction {
   display: flex;
@@ -408,6 +419,7 @@ footer {
 .Programming_language {
   width: 100%;
 }
+
 .Programming_language p {
   color: black;
   font-size: larger;
@@ -429,8 +441,19 @@ footer {
   color: white;
 }
 
+/*
+.langage {
+  width: 50px;
+  height: 50px;
+}
+.langage img{
+  width: 50px;
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+*/
 .skill-ninety_css {
-  background-color: cornflowerblue;
+  background-color: #2670bc;
   height: 12px;
   width: 90%;
   opacity: 1;
@@ -487,11 +510,6 @@ footer {
   color: white;
 }
 
-/*.skill-ninety{
- cursor: pointer;
- background-color: #e1601a;
-}
-*/
 /**Formulaire de contacte*/
 .formulaire-container {
   max-width: 600px;
@@ -502,7 +520,7 @@ footer {
   background: #6b4dd8;
 }
 
-h2 {
+h4 {
   margin-top: 0;
 }
 

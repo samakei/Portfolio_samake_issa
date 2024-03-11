@@ -17,8 +17,9 @@ body {
  margin-right: auto;
  gap: 5rem;
  background: linear-gradient(to left,
- blue, indigo, orange,  red, 
- green, black, skyblue
+ blue, indigo, #2f4f4f, orange,  red, 
+ green, black, rgb(66, 136, 163)
+ 
  );
  
 }
@@ -65,9 +66,6 @@ body {
   justify-content: center;
   background: #eaeaea;
   height: 40px;
-h2 {
-  margin-top: 1rem;
-}
 }
 
 .localisation i {
@@ -81,13 +79,17 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+  }
+  .section-welcome h3{
+    font-size: 21px;
+  }
+  .section-welcome p {
+    font-size: 14px;
   }
   .card-welcome{
    color: #fff;
-  
-    flex-wrap: wrap;
-
+   flex-wrap: wrap;
+    
   }
   .card-welcome img {
     width: 400px;
@@ -97,8 +99,6 @@ h2 {
     color: #fff;
     margin-right: 1rem;
     list-style-type: none;
-    
-
   }
 
   .card-banner img {
@@ -115,13 +115,11 @@ h2 {
   justify-content: space-between;
   gap: 30px;
   margin-top: 2rem;
-
-img {
+}
+.card-project img {
     width: 100%;
     height: 250px;
     border-radius: 25px;
-  }
-
 }
 
 .card {
@@ -172,6 +170,12 @@ font-family: "Archivo";
 /*paddinp 80px x 20px pour les sections*/
 section {
   padding: 50px 20px;
+
+}
+
+section h4{
+  font-size: 25px;
+
 }
 /*contenner*/
 .main-containner {
@@ -187,15 +191,12 @@ section {
   width: 100%;
   margin-top: 2rem;
   position: relative;
- /* border: 1px solid #2f4f4f;
-   color: #fff;*/
   border-radius: 10px;
-img {
+}
+.about-me img {
   border-radius: 50%;
    width: 200px;
    height: 230px;
-   border: 5px, solid #2f4f4f ;
-}
 }
 
 .about-me p  {
@@ -209,7 +210,7 @@ img {
  
   
 }
-.about-me h3{
+.about-me h4{
   display: flex;
   padding: 1rem;
 }
@@ -217,6 +218,7 @@ img {
   margin-bottom: 0;
   background-color: #5799af;
   opacity: 1;
+
 }
 
 footer {
@@ -247,7 +249,6 @@ footer {
   .navbar a.icon {
     float: right;
     display: block;
-    margin-right: right;
     padding: 0px 10px 0px;
   }
 
@@ -291,9 +292,9 @@ footer {
   margin-right: 1.5rem;
   border-radius: 2px;
   height: 52px;
-  a{
+}
+.navbar a {
     margin-left: 0;
-  }
 }
 .section-welcome {
   flex-direction: column;
@@ -356,18 +357,19 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-img{
+}
+
+#about img{
   width: 100%;
   height: auto;
- 
-}
 }
 .about-me {
   flex-direction: column;
   margin-bottom: 0rem;
   
 }
-.about-me h3 {
+
+.about-me h5 {
   padding: 0rem 1rem;
   margin-bottom: 0rem;
 }
@@ -383,15 +385,17 @@ img{
 }
 .réseaux-sociaux{
   width: auto;
-
-h4{
-  margin-left: 1rem;
 }
+.réseaux-sociaux h5{
+  margin-left: 1rem;
 }
 
 .réseaux-sociaux  a{
   margin-right: 1rem;
 }
+}
+#cv h5{
+  font-size: 22px;
 }
 
 /**Orientation de mon cv**/
@@ -426,19 +430,20 @@ h4{
 
 .Programming_language {
   width: 100%;
-
-p {
+}
+.Programming_language p {
+  
   color: black;
   font-size: larger;
   margin-bottom: 0;
 }
-}
+
+
 /**maitrise de langage de programmation**/
 .skills_container .Programming_language .skill_live {
   width: 100%;
   background-color: #f0f0f0;
   opacity: 1;
-
 }
 
 .skill-ninety{
@@ -449,9 +454,19 @@ p {
   color: white;
    
 }
-
+/*
+.langage {
+  width: 50px;
+  height: 50px;
+}
+.langage img{
+  width: 50px;
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+*/
 .skill-ninety_css {
-   background-color: cornflowerblue;
+  background-color: #2670bc;
     height: 12px;
     width: 90%;
    opacity: 1;
@@ -506,13 +521,6 @@ p {
    color: white;
 }
 
-
-  
-/*.skill-ninety{
- cursor: pointer;
- background-color: #e1601a;
-}
-*/
 /**Formulaire de contacte*/
 .formulaire-container {
   max-width: 600px;
@@ -523,7 +531,7 @@ p {
   background: #6b4dd8;
 }
 
-h2 {
+h4 {
   margin-top: 0;
 }
 
