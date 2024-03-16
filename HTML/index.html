@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portoflio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="../Styles/index.css">
     <link rel="stylesheet" href="../Styles/animation.css">
     <!--font-awesome icon-->
@@ -18,27 +18,29 @@
         
    <!-- Ensemble de liens de navigation -->
     <nav class="navbar" id="myTopnav">
-    <a href="" class="active"><h1>Portoflio<br>Développeur Front-end</h1></a>
-    <a href="#home" data-translate="home">Home</a>
-    <a href="#project" data-translate="projects">Projects</a>
+    <a href="" class="active"><h1>Portoflio<br data-translate="dev">Développeur Front-end</h1></a>
+    <a href="#home" data-translate="home">Accueil</a>
+    <a href="#project" data-translate="project">Projets</a>
     <a href="#cv" data-translate="cv">CV</a>
-    <a href="#about" data-translate="about">About</a>
+    <a href="#about" data-translate="about">À propos</a>
     <a href="#contact" data-translate="contact">Contact</a>
-   
+
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a>
-    <!-- Répétez pour d'autres langues --
-    <div class="language-selector"> -->
-      <div id="language-selector">
-    <img id="drapeau-fr" src="../assets/fr-flag.png" alt="French Flag">
-    <img id="drapeau-en" src="../assets/us-flag.png" alt="English Flag">
-    <!-- Ajoutez des drapeaux pour chaque nouvelle langue -->
-</div>
+ <!--Gooogle traduction-->
+   <div id="google_translate_element"></div>
+ <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+ <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+   
 
-           
-         </nav>
+     
+        </nav>
       </header>
 
     <div class="localisation">
@@ -50,34 +52,35 @@
          <div class="section-welcome">
            <div class="card-welcome">
             <img src="../assets/carbon_js.png" alt="">
-        <h3 data-translate="welcome_message_us1">Bienvenue sur mon portfolio</h3>
+        <h3 data-translate="title_0">Bienvenue sur mon portfolio</h3>
          
-        <p data-translate="paragraph_us1">Je suis un développeur web junior passionné par la création de solutions innovantes.</p>
+        <p data-translate="paragraph_1">Je suis un développeur web junior passionné par la création de solutions innovantes.</p>
         
            </div>
 
         <div class="card-banner">
            <img src="../assets/img_responsive.png" alt="">
-        <h3 data-translate="welcome_message_us2">Développement Web Responsive</h3>
-        <p data-translate="paragraph_us2">Site où Application web Compatible Mobile, Tablettes & PC</p>
+        <h3 data-translate="title">Développement Web Responsive</h3>
+        <p data-translate="paragraph_1">Site où Application web Compatible Mobile, Tablettes & PC</p>
           
         </div>
          </div>
     </section>
     
     <section id="project">
-        <h4 data-translate="projects_us-h4">My projects</h4>
+        <h4 data-translate="projects_us_h4">Mes projets</h4>
         <!-- Insérez vos projets ici -->
         <div class="card-project">
 
             <div class="card">
             <img  src="../assets/Banner-Booki.png" alt="">
-             <p data-translate="paragraph_card1">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
+             <p data-translate="paragraph_card0">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
                 Booki, une plateforme de réservation de vacances.
              </p>
              <ul class="liens button">
-            <li><a href="https://github.com/samakei/booki-starter-code.git" data-translate="github_us">Liens Github</a></li>
-             <li><a href="https://samakei.github.io/booki-starter-code/" data-translate="Visit_us">Visitez le site</a> </li>
+              <li> <a href="https://github.com/samakei/booki-starter-code.git" data-translate="github_us">Liens Github</a> </li>
+             <li> <a href="https://samakei.github.io/booki-starter-code/" data-translate="Visit_us">Visitez le site</a> </li>
+
              </ul>
             </div>
 
@@ -85,7 +88,7 @@
 
             <div class="card">
              <img src="../assets/Banner-Ohmyfood.png" alt="">
-             <p data-translate="paragraph_card2">Améliorez l'interface d'un site mobile avec des animations CSS
+             <p data-translate="paragraph_card1">Améliorez l'interface d'un site mobile avec des animations CSS
               Implémentez le site d’une foodtech en mobile first avec des animations CSS.</p>
               <ul class="liens button">
              <li><a href="https://github.com/samakei/ohmyfood.git" data-translate="github_us">Liens Github</a></li>
@@ -95,7 +98,7 @@
 
             <div class="card">
             <img src="../assets/sophie_bluel.png"  alt="">
-                 <p data-translate="paragraph_card3">Créez une page web dynamique avec JavaScript
+                 <p data-translate="paragraph_card2">Créez une page web dynamique avec JavaScript
                  Aidez mon équipe à finaliser le nouveau site internet d’une architecte grâce 
                  à la création d’un site dynamique avec JavaScript, communiquant avec une API.</p>
                 <ul class="liens button">
@@ -106,7 +109,7 @@
 
             <div class="card">
              <img src="../assets/Kasa_logo.png" alt=""> 
-              <p data-translate="paragraph_card4">Créez une application web de location immobilière avec React
+              <p data-translate="paragraph_card3">Créez une application web de location immobilière avec React
                  Implémentez le front end de Kasa, une application de location de logements.
                 </p>
                   <ul class="liens button ">
@@ -119,13 +122,13 @@
     </section>
    <!--competences-->
     <section id="cv" >
-        <h4 data-translate="cv_us_h4">Discover my CV</h4>
+        <h4 data-translate="cv_us_h4">Découvrez mon CV</h4>
         	<div class="cv-direction">
 		<a class="button" href="../assets/CV-Développeur_web.pdf" data-translate="takes_us_cv">Télécharger mon CV</a>
             </div>
 
         <div class="skills_container">
-        <h5 data-translate="skills_us">My professional skills</h5> 
+        <h5 data-translate="skills_us">Mes compétences professionnelles</h5> 
         <div class="Programming_language">
            <p>HTML:5</p>
            <div class="delay-0 skill_live">
@@ -185,16 +188,16 @@
 
      <!--A propos de moi -->
     <section id="about">
-        <h4 data-translate="about_us_h4">About me</h4>
+        <h4 data-translate="about_us_h4">À propos de moi</h4>
         <div class="about-me">
         <img class="imah" src="../assets/samakei.jpg" alt="">
-        <h5 data-translate="paragraph_us3">Mr SAMAKE Issa</h5>
-        <p>Currently in professional retraining and at the end of my web developer & integrator training at Openclassroom.
-          I am currently looking for a CDD, CDI or work-study job because I actively want to deepen my skills as a web developer and web integrator,
-          essential subject today for working with new technologies
-         Holder of a CAP metalworker locksmith, obtained at the Françoise Dolto high school in Fontanil-Cornillon 38120 in 2015,
-          plus RNCP level IV certificate mastery of locksmith troubleshooting
-          and installer of all closures in Créteil 94000 November 2016.</p>
+        <h5 >Mr SAMAKE Issa</h5>
+        <p data-translate="paragraph_us3">Actuellement en reconversion professionnelle et en fin de ma formation de développeur & intégrateur web chez Openclassroom.
+          Je suis actuellement à la recherche d'un emploi en CDD, CDI ou en alternance car je souhaite activement approfondir mes compétences de développeur web et d'intégrateur web,
+          sujet essentiel aujourd'hui pour travailler avec les nouvelles technologies.
+         Titulaire d'un CAP serrurier métallurgiste, obtenu au lycée Françoise Dolto de Fontanil-Cornillon 38120 en 2015,
+          plus certificat RNCP niveau IV maîtrise dépannage serrurier
+          et installateur de toutes fermetures à Créteil 94000 novembre 2016.</p>
         </div>
     </section>
 
@@ -203,19 +206,19 @@
     <div class="formulaire-container">
     <form id="contactForm">
        <h4 data-translate="contact_us_for">Contact</h4>
-      <label for="name" data-translate="name_us">Name:</label>
+      <label for="name" data-translate="name_us">Nom:</label>
       <input type="text" id="name" name="name" required>
-       <label for="first_name" data-translate="first_name_us">First name:</label>
+       <label for="first_name" data-translate="first_name_us">Prénom:</label>
        <input type="text" id="first_name" name="first name" required>
        <label for="tel">Téléphone</label>
        <input type="text" id="tel" name="tel">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email">
 
-      <label for="message" data-translate="message_us">Message:</label>
+      <label for="message" >Message:</label>
       <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send message</button>
+      <button type="submit" data-translate="message_us">Envoyer le message</button>
     </form>
  
   <div class="réseaux-sociaux">
@@ -228,10 +231,12 @@
    </div>
     </section>
     <script src="/Javascript/script.js" defer></script>
+     <script src="../Javascript/translete.js" defer></script>
+    
     <footer>
         <p>&copy; 2024 Mon Portfolio</p>
     </footer>
-
+   
     </main>
 </body>
 </html>
