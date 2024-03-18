@@ -10,7 +10,7 @@ function myFunction() {
 } //fin responsive//
 
 
-// Load JSON files containing language translations
+// Charge les fichiers JSON contenant les traductions de langue
 const translations = {};
 
 // Function to load JSON files
@@ -24,7 +24,7 @@ function loadTranslations(lang) {
     .catch(error => console.error('Error loading translations:', error));
 }
 
-// Function to update language
+// Fonction pour mettre à jour la langue
 function updateLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(element => {
@@ -33,12 +33,12 @@ function updateLanguage(lang) {
     });
 }
 
-// Function to change language
+// Fonction pour changer de langue
 function changeLanguage(language) {
     loadTranslations(language);
 }
 
-// Load default language translations on page load
+// Charger les traductions de la langue par défaut au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
-    loadTranslations('en'); // Load English translations by default
+    loadTranslations('en'); // Charger les traductions anglaises par défaut
 });
