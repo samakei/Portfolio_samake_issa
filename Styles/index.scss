@@ -10,7 +10,8 @@ font-family: Arial, sans-serif;
   padding: 20px;
   align-items: center;
   overflow: hidden;
-
+ max-width: 1750px;
+ margin: 0 auto;
 } 
 .navbar .active{
   display: flex;
@@ -40,7 +41,7 @@ font-family: Arial, sans-serif;
   text-align: left;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .navbar .icon {
@@ -67,6 +68,8 @@ font-family: Arial, sans-serif;
   justify-content: center;
   background: #eaeaea;
   height: 40px;
+  max-width: 1750px;
+  margin: 0 auto;
 }
 
 .localisation i {
@@ -172,6 +175,8 @@ font-family: "Archivo";
 /*paddinp 80px x 20px pour les sections*/
 section {
   padding: 50px 20px;
+  max-width: 1750px;
+  margin: 0 auto;
 
 }
 
@@ -181,7 +186,7 @@ section h4{
 }
 /*contenner*/
 .main-containner {
-  width: 100%;
+  min-width: 100%;
   height: 100%;
 }
 /** A propos de moi **/
@@ -228,7 +233,10 @@ section h4{
   .card {
     width: 47%;
   }
-  
+  .navbar a {
+    font-size: 14px;
+  }
+ 
 }
 
 /*media querry format petite eran */
@@ -266,12 +274,12 @@ section h4{
     font-size: 13px;
   }
   .navbar i{
-    font-size: 22px;
+    font-size: 30px;
     margin-right: 0;
     
   }
   .navbar {
-    padding: 10;
+    padding: 17px;
   }
   
   .navbar{
@@ -289,19 +297,6 @@ section h4{
  
 }
 
-/*google*
-#google_translate_element {
-  width: 40px;
- margin-top: 1.50rem;
-}
-.goog-te-gadget .goog-te-combo{
-  display: flex;
-  flex-direction: column;
-}
-.goog-te-combo {
-  margin-top: 2rem;
-}
-/*fin*/
 .section-welcome {
   width: 100%;
   flex-direction: column;
@@ -397,7 +392,10 @@ section h4{
 
 .réseaux-sociaux  a{
   margin-right: 1rem;
-}
+}  
+ .translete .button{
+   flex-wrap: nowrap;
+  }
 }
 #cv h5{
   font-size: 22px;
@@ -562,9 +560,7 @@ button {
   background: #45a049;
 }
 
-button:hover {
-  background-color: #45a049;
-}
+
 /**Reseaux sociaux**/
 .réseaux-sociaux {
   display: flex;
@@ -596,11 +592,29 @@ button:hover {
   
 }
 /**DRAPEAU**/
-header {
+.translete {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+
+.translete button {
+    display: flex;
+    flex-direction: column ;
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.translete  button img{
+  width: 35px;
+  height: 24px;
+}
+.translete button:hover {
+  background-color: #45a049;
 }
 
 footer {
@@ -608,20 +622,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+  max-width: 1750px;
+  margin: 0 auto;
 }
 
-header {
-    margin-bottom: 20px;
-}
 
-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    
-}
-button img{
-  width: 30px;
-  height: 24px;
-}

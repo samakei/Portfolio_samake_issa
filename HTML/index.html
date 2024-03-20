@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,14 @@
     <link rel="stylesheet" href="../Styles/animation.css">
     <!--font-awesome icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!--javascript font awesome icon-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
       <header>
-        
-        
 
    <!-- Ensemble de liens de navigation -->
     <nav class="navbar" id="myTopnav">
-    <a href="" class="active"><h1>Portoflio<br ata-i18n="dev">Développeur Front-end</h1></a>
+    <a href="" class="active"><h1>Portoflio<br>Développeur Front-end</h1></a>
     <a href="#home" data-i18n="home">Accueil</a>
     <a href="#project" data-i18n="project">Projets</a>
     <a href="#cv" data-i18n="cv">CV</a>
@@ -29,20 +25,20 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a>
-
-    <header>
+    
+    <div class="translete">
         <button type="button" id="lang-en" onclick="changeLanguage('en')"><img src="/assets/flags.en.png" alt="anglais"></button>
         <button type="button" id="lang-fr" onclick="changeLanguage('fr')"><img src="/assets/flags.fr.png" alt="français"></button>
-    </header>
-
+    </div>
     
         </nav>
       </header>
+   
 
     <div class="localisation">
         <h2><i class='fas fa-map-marker-alt'></i>Lyon, Villefranche Sur Saône</h2>
       </div>
-
+    
     <main class="main-containner">
         <section id="home">
          <div class="section-welcome">
@@ -180,7 +176,7 @@
         </div>
     </section>
 
-    
+      
 
      <!--A propos de moi -->
     <section id="about">
@@ -226,7 +222,15 @@
 
    </div>
     </section>
+    <!--loader spin-->
+    <div id="loader-overlay">
+        <div id="loader"></div>
+    </div>
+
     <script src="/Javascript/script.js" defer></script>
+       
+       <!--<div id="loader" class="hidden"></div> -->
+
     <footer>
         <p>&copy; 2024 Mon Portfolio</p>
     </footer>
