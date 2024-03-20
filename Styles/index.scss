@@ -55,7 +55,14 @@ font-family: Arial, sans-serif;
 .navbar .active:hover{
   color: white;
 }
-
+.td-en {
+  width: 30px;
+  height: 24px;
+}
+.td-en img{
+  width: 100px;
+  height: 24px;
+}
 /*gps localisation*/
 .localisation {
   display: flex;
