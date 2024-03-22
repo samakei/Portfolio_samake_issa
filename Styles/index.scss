@@ -20,12 +20,7 @@ font-family: Arial, sans-serif;
  
 
 }
-.goog-te-gadget .goog-te-combo{
-  width: auto;
-}
-.goog-te-gadget {
-  margin-top: 2rem;
-}
+
 .navbar  a {
  list-style-type: none;
  display: flex;
@@ -104,7 +99,7 @@ font-family: Arial, sans-serif;
     
   }
   .card-welcome img {
-    width: 400px;
+    width: 100%;
     height: 260px;
   }
   .card-banner {
@@ -114,7 +109,7 @@ font-family: Arial, sans-serif;
   }
 
   .card-banner img {
-    width: 380px;
+    width: 100%;
     height: 260px;
     margin-right: auto;
     margin-left: auto;
@@ -556,7 +551,7 @@ textarea {
 }
 
 button {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
   color: white;
   padding: 10px 20px;
   border: none;
@@ -632,5 +627,4 @@ footer {
   max-width: 1750px;
   margin: 0 auto;
 }
-
 
