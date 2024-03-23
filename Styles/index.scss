@@ -265,7 +265,7 @@ section h4{
     display: block;
     text-align: left;
   }
-
+  
 }
 
 @media only screen and (max-width: 768.99px) {
@@ -585,7 +585,8 @@ button {
  
 }
 .réseaux-sociaux img{
-  width: 25px;
+  width: 30px;
+  height: auto;
   border-radius: 10px;
   margin: 10px 5px;
 }
@@ -627,4 +628,6 @@ footer {
   max-width: 1750px;
   margin: 0 auto;
 }
+
+
 
