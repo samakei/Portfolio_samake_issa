@@ -1,4 +1,9 @@
- { 
+ {
+  "name": "foo",
+  "exports": "./modern.js",
+  "main": "./legacy.cjs",
+  "module": "./module.js",
+  
     "home": "Accueil",
 
     "project": "Projets",
