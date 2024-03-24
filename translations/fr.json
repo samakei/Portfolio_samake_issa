@@ -1,9 +1,4 @@
  {
-  "name": "foo",
-  "exports": "./modern.js",
-  "main": "./legacy.cjs",
-  "module": "./module.js",
-  
     "home": "Accueil",
 
     "project": "Projets",
@@ -16,43 +11,53 @@
 
     "title_welcome": "Bienvenue sur mon portfolio.",
 
-    "paragraph_us1": "Je suis un développeur web junior passionné par la création de solutions innovantes.",
+    "description_us1": "Je suis un développeur web junior passionné par la création de solutions innovantes.",
 
-    "welcome_message_us2": "Développement Web Responsive",
+    "title_responsive": "Développement Web Responsive",
 
-    "paragraph_us2": "Site où Application web Compatible Mobile, Tablettes & PC.",
+    "description_us2": "Site où Application web Compatible Mobile, Tablettes & PC.",
 
-    "projects_us_h4": "Mes projets",
+    "title_project": "Mes projets",
 
-    "paragraph_card1": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS. Booki, une plateforme de réservation de vacances.",
+     "title_card1": "",
+
+    "description_card1": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS. Booki, une plateforme de réservation de vacances.",
 
     "github_us": "liens Github",
 
     "Visit_us": "Visitez le site",
 
-    "paragraph_card2": "Améliorez l'interface d'un site mobile avec des animations CSS Implémentez le site d’une foodtech en mobile first avec des animations CSS.",
+    "title_card2": "",
 
-    "paragraph_card3": "Créez une page web dynamique avec JavaScript Aidez mon équipe à finaliser le nouveau site internet d’une architecte grâce à la création d’un site       dynamique avec    JavaScript, communiquant avec une API.",
+    "description_card2": "Améliorez l'interface d'un site mobile avec des animations CSS Implémentez le site d’une foodtech en mobile first avec des animations CSS.",
+     
+    "title_card3": "",
 
-    "paragraph_card4": "Créez une application web de location immobilière avec React Implémentez le front end de Kasa, une application de location de logements.",
+    "description_card3": "Créez une page web dynamique avec JavaScript Aidez mon équipe à finaliser le nouveau site internet d’une architecte grâce à la création d’un site       dynamique avec    JavaScript, communiquant avec une API.",
+     
+    "title_card4": "",
 
-    "cv_us_h4": "Découvrez mon CV.",
+    "description_card4": "Créez une application web de location immobilière avec React Implémentez le front end de Kasa, une application de location de logements.",
 
-    "takes_us_cv": "Télécharger mon CV",
+    "title_cv": "Découvrez mon CV.",
+
+    "download": "Télécharger mon CV",
 
     "skills_us": "Mes compétences professionnelles.",
 
-    "about_us_h4": "A propos",
+    "title_about": "À propos de moi",
 
-    "paragraph_us3": "Actuelement en reconversion profesionnelle et à la fin de ma Formation développeur & d'intégrateur web chez Openclassroom. Je suis actuelement a la recherche d'un emploi en CDD, CDI Où en alternance car je souhaite activement approfondir mes compétences en développeur web et d'intégrateur web, matière essentielle aujourd'hui pour travailler avec les nouvelles technologies Titulaire d'un CAP serrurier métallier, obtenu au lycée Françoise Dolto à Fontanil-Cornillon 38120 en 2015, plus certificat RNCP de niveau IV maîtrise de serrurerie dépannage et poseur de toutes fermetures à Créteil 94000 novembre 2016.",
+    "description_about": "Actuelement en reconversion profesionnelle et à la fin de ma Formation développeur & d'intégrateur web chez Openclassroom. Je suis actuelement a la recherche d'un emploi en CDD, CDI Où en alternance car je souhaite activement approfondir mes compétences en développeur web et d'intégrateur web, matière essentielle aujourd'hui pour travailler avec les nouvelles technologies Titulaire d'un CAP serrurier métallier, obtenu au lycée Françoise Dolto à Fontanil-Cornillon 38120 en 2015, plus certificat RNCP de niveau IV maîtrise de serrurerie dépannage et poseur de toutes fermetures à Créteil 94000 novembre 2016.",
 
-    "contact_us_for": "Contact",
+    "title_contact": "Contactez-nous",
 
-    "name_us": "Nom",
+    "name": "Nom",
 
-    "first_name_us": "Prénom",
-    
-    "message_us": "Envoyer le message"
+    "first_name": "Prénom",
+
+    "email": "Email",
+
+    "send_button": "Envoyer le message"
 
   }
 

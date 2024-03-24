@@ -126,58 +126,55 @@ body {
 
 /*carte de project avec les liens cliquable*/
 .card-project {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
   margin-top: 2rem;
 }
 
-.card-project img {
-  width: 100%;
-  height: 250px;
-  border-radius: 25px;
-}
-
 .card {
-  width: 40%;
+  width: 60%;
+  max-height: 450px;
   border-radius: 25px;
   background: #333;
 }
-
-.card ul {
-  list-style-type: none;
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+}
+.card h5 {
+  padding: 0rem 1.5rem;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Archivo";
 }
 
 .card p {
   color: #fff;
   font-size: 12px;
-  padding: 0rem 2rem;
+  padding: 0rem 1.5rem;
 }
 
-.liens a {
+.liens {
+  display: flex;
+  justify-content: space-around;
   padding: 20px;
-  color: white;
+}
+.liens a {
   text-decoration: none;
 }
 
-.button {
-  display: flex;
+.liens .button {
+  display: inline-block;
+  background-color: #2f4f4f; /* Couleur de fond du bouton */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Suppression du soulignement du lien */
+  transition: background-color 0.3s;
   font-family: "Archivo";
-}
-
-.button ul {
-  list-style-type: none;
-}
-
-.button li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: #2f4f4f;
-  width: 140px;
-  height: 45px;
-  margin-right: auto;
 }
 
 .liens a:hover {
@@ -224,11 +221,12 @@ section h4 {
   max-width: 1200px;
   border: 1px solid #333;
   padding: 1rem;
+  font-family: "Archivo";
 }
 
 #contact {
-  margin-bottom: 0;
   background-color: #6b4dd8;
+  margin-bottom: 0;
 }
 
 /*media querry format grand eran */
@@ -248,7 +246,7 @@ section h4 {
   }
 }
 /*media querry format petite eran */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -258,7 +256,7 @@ section h4 {
     padding: 0px 10px 0px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar.responsive {
     position: relative;
   }
@@ -328,11 +326,8 @@ section h4 {
     height: auto;
     flex-direction: column;
   }
-  .liens a {
-    padding: 10px 10px;
-  }
-  .button li {
-    width: auto;
+  .liens .button {
+    padding: 10.5px 15px;
   }
   #cv {
     display: flex;
@@ -575,8 +570,7 @@ button {
   border-radius: 10px;
   margin: 30px 0 10px;
 }
-
-.réseaux-sociaux img {
+.réseaux-sociaux .bouton img {
   width: 30px;
   height: 30px;
   border-radius: 10px;

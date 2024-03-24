@@ -101,6 +101,7 @@ font-family: Arial, sans-serif;
   .card-welcome img {
     width: 100%;
     height: 260px;
+    
   }
   .card-banner {
     color: #fff;
@@ -118,57 +119,58 @@ font-family: Arial, sans-serif;
 
 /*carte de project avec les liens cliquable*/
 .card-project {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
   margin-top: 2rem;
 }
-.card-project img {
-    width: 100%;
-    height: 250px;
-    border-radius: 25px;
-}
 
 .card {
-  width: 40%;
+  width: 60%;
+  max-height: 450px;
   border-radius: 25px;
   background: #333;
+  
+img {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
 }
 
-.card ul {
-  list-style-type: none;
+h5 {
+  padding: 0rem 1.5rem;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Archivo";
+}
+
 }
 
 .card p{
   color: #fff;
   font-size: 12px;
-  padding: 0rem 2rem;
+  padding: 0rem 1.5rem;
 }
 
-.liens  a {
+.liens {
+  display: flex;
+  justify-content: space-around;
   padding: 20px;
-  color: #ffff;
+a{
   text-decoration: none;
 }
 
-.button {
-display: flex;
-font-family: "Archivo";
 }
-
-.button ul{
-   list-style-type: none;
-}
-
-.button li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: #2f4f4f;
-  width: 140px;
-  height: 45px;
- margin-right: auto;
+.liens .button {
+      display: inline-block;
+      background-color: #2f4f4f; /* Couleur de fond du bouton */
+      color: #ffffff; /* Couleur du texte */
+      padding: 10px 20px; /* Espacement interne */
+      border-radius: 5px; /* Coins arrondis */
+      text-decoration: none; /* Suppression du soulignement du lien */
+      transition: background-color 0.3s;
+      font-family: "Archivo";
 }
 
 .liens a:hover{
@@ -213,14 +215,14 @@ section h4{
   max-width: 1200px;
   border: 1px solid #333;
   padding: 1rem;
+  font-family: "Archivo";
  
 }
   
 
 #contact{
-  margin-bottom: 0;
  background-color: #6b4dd8;
-
+ margin-bottom: 0;
 }
 
 /*media querry format grand eran */
@@ -242,7 +244,7 @@ section h4{
 }
 
 /*media querry format petite eran */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -252,7 +254,7 @@ section h4{
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive a.icon {
     position: absolute;
@@ -328,13 +330,10 @@ section h4{
     height: auto;
     flex-direction: column;
   } 
-  .liens a {
-    padding: 10px 10px;
+  .liens .button{
+    padding: 10.5px 15px;
   }
-  .button li {
-    width: auto;
-   
-  } 
+ 
 #cv {
   display: flex;
   flex-wrap: wrap;
@@ -584,14 +583,15 @@ button {
   font-weight: 700;
   border-radius: 10px;
   margin: 30px 0 10px;
- 
-}
-.réseaux-sociaux img{
+img {
   width: 30px;
   height: 30px;
   border-radius: 10px;
   margin: 10px 5px;
 }
+ 
+}
+
 .réseaux-sociaux a:hover{
   cursor: pointer;
   

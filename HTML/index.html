@@ -49,80 +49,84 @@
         <section id="home">
          <div class="section-welcome">
            <div class="card-welcome">
-            <img src="../assets/carbon_js.webp" alt="">
+            <img src="../assets/carbon_js.webp" alt="image bienvenue">
         <h3 data-i18n="title_welcome">Bienvenue sur mon portfolio</h3>
          
-        <p data-i18n="paragraph_us1">Je suis un développeur web junior passionné par la création de solutions innovantes.</p>
+        <p data-i18n="description_us1">Je suis un développeur web junior passionné par la création de solutions innovantes.</p>
         
            </div>
 
         <div class="card-banner">
-           <img src="../assets/img_responsive.webp" alt="">
-        <h3 data-i18n="welcome_message_us2">Développement Web Responsive</h3>
-        <p data-i18n="paragraph_us2">Site où Application web Compatible Mobile, Tablettes & PC</p>
+           <img src="../assets/img_responsive.webp" alt="image responsive">
+        <h3 data-i18n="title_responsive">Développement Web Responsive</h3>
+        <p data-i18n="description_us2">Site où Application web Compatible Mobile, Tablettes & PC</p>
           
         </div>
          </div>
     </section>
-    
+    <!-- section de  projets ici -->
     <section id="project">
-        <h4 data-i18n="projects_us_h4">Mes projets</h4>
-        <!-- Insérez vos projets ici -->
+        <h4 data-i18n="title_project">Mes projets</h4>
         <div class="card-project">
 
             <div class="card">
             <img  src="../assets/Banner-Booki.webp" alt="image de logo Booki">
-             <p data-i18n="paragraph_card1">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
+              <h5 data-i18n="title_card1">Page d'accueil de l'agence de voyage</h5>
+             <p data-i18n="description_card1">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.
                 Booki, une plateforme de réservation de vacances.
              </p>
-             <ul class="liens button">
-              <li> <a href="https://github.com/samakei/booki-starter-code.git" data-i18n="github_us">Liens Github</a> </li>
-             <li> <a href="https://samakei.github.io/booki-starter-code/" data-i18n="Visit_us">Visitez le site</a> </li>
+            <!-- Bouton avec lien cliquable -->
+             <div class="liens">
+              <a class="button" href="https://github.com/samakei/booki-starter-code.git" data-i18n="github_us">Liens Github</a> 
+              <a class="button" href="https://samakei.github.io/booki-starter-code/" data-i18n="Visit_us">Visitez le site</a> 
+             </div>
 
-             </ul>
             </div>
 
             
 
             <div class="card">
              <img src="../assets/Banner-Ohmyfood.webp" alt="image de logo Ohmyfood">
-             <p data-i18n="paragraph_card1">Améliorez l'interface d'un site mobile avec des animations CSS
+                    <h5 data-i18n="title_card2">Amélioration de l'interface du site mobile</h5>
+             <p data-i18n="description_card2">Améliorez l'interface d'un site mobile avec des animations CSS
               Implémentez le site d’une foodtech en mobile first avec des animations CSS.</p>
-              <ul class="liens button">
-             <li><a href="https://github.com/samakei/ohmyfood.git" data-i18n="github_us">Liens Github</a></li>
-             <li><a href=" https://samakei.github.io/ohmyfood/" data-i18n="Visit_us">Visitez le site</a> </li>
-              </ul>
+              <div class="liens">
+             <a class="button" href="https://github.com/samakei/ohmyfood.git" data-i18n="github_us">Liens Github</a>
+             <a class="button" href=" https://samakei.github.io/ohmyfood/" data-i18n="Visit_us">Visitez le site</a> 
+              </div>
             </div>
 
             <div class="card">
             <img src="../assets/sophie_bluel.webp"  alt="image de logo sophie bluel">
-                 <p data-i18n="paragraph_card2">Créez une page web dynamique avec JavaScript
+                      <h5 data-i18n="title_card3">Dynamic Web Page Creation</h5>
+                 <p data-i18n="description_card3">Créez une page web dynamique avec JavaScript
                  Aidez mon équipe à finaliser le nouveau site internet d’une architecte grâce 
                  à la création d’un site dynamique avec JavaScript, communiquant avec une API.</p>
-                <ul class="liens button">
-            <li><a href="https://github.com/samakei/Portfolio-architecte-sophie-bluel.git" data-i18n="github_us">Liens Github</a> </li>
-            <li><a href="" data-i18n="Visit_us">Visitez le site</a> </li>
-                </ul>
+                <div class="liens">
+            <a class="button" href="https://github.com/samakei/Portfolio-architecte-sophie-bluel.git" data-i18n="github_us">Liens Github</a> 
+            <a class="button" href="" data-i18n="Visit_us">Visitez le site</a> 
+                </div>
             </div>
 
             <div class="card">
              <img src="../assets/Kasa_logo.webp" alt="image de logo Kasa_logo"> 
-              <p data-i18n="paragraph_card3">Créez une application web de location immobilière avec React
+                   <h5 data-i18n="title_card4">Application web de location de biens immobiliers</h5>
+              <p data-i18n="description_card4">Créez une application web de location immobilière avec React
                  Implémentez le front end de Kasa, une application de location de logements.
                 </p>
-                  <ul class="liens button ">
-             <li><a href="https://github.com/samakei/kasa.git" data-i18n="github_us">Liens Github</a> </li>
-             <li><a href="" data-i18n="Visit_us">Visitez le site</a> </li>
-                  </ul>    
+                  <div class="liens">
+             <a class="button" href="https://github.com/samakei/kasa.git" data-i18n="github_us">Liens Github</a> 
+             <a class="button" href="" data-i18n="Visit_us">Visitez le site</a>
+                  </div>    
             </div>
 
         </div>
     </section>
    <!--competences-->
     <section id="cv" >
-        <h4 data-i18n="cv_us_h4">Découvrez mon CV</h4>
+        <h4 data-i18n="title_cv">Découvrez mon CV</h4>
         	<div class="cv-direction">
-		<a class="button" href="../assets/CV-Développeur_web.pdf" data-i18n="takes_us_cv">Télécharger mon CV</a>
+		<a class="button" href="../assets/CV-Développeur_web.pdf" data-i18n="download">Télécharger mon CV</a>
             </div>
 
         <div class="skills_container">
@@ -186,11 +190,11 @@
 
      <!--A propos de moi -->
     <section id="about">
-        <h4 data-i18n="about_us_h4">À propos de moi</h4>
+        <h4 data-i18n="title_about">À propos de moi</h4>
         <div class="about-me">
         <img class="imah" src="../assets/samakei.webp" alt="image about-me">
         <h5 >Mr SAMAKE Issa</h5>
-        <p data-i18n="paragraph_us3">Actuellement en reconversion professionnelle et en fin de ma formation de développeur & intégrateur web chez Openclassroom.
+        <p data-i18n="description_about">Actuellement en reconversion professionnelle et en fin de ma formation de développeur & intégrateur web chez Openclassroom.
           Je suis actuellement à la recherche d'un emploi en CDD, CDI ou en alternance car je souhaite activement approfondir mes compétences de développeur web et d'intégrateur web,
           sujet essentiel aujourd'hui pour travailler avec les nouvelles technologies.
          Titulaire d'un CAP serrurier métallurgiste, obtenu au lycée Françoise Dolto de Fontanil-Cornillon 38120 en 2015,
@@ -203,20 +207,20 @@
         <!-- formulaire de contact-->
     <div class="formulaire-container">
     <form id="contactForm">
-       <h4 data-i18n="contact_us_for">Contact</h4>
-      <label for="name" data-i18n="name_us">Nom:</label>
+       <h4 data-i18n="title_contact">Contact</h4>
+      <label for="name" data-i18n="name">Nom:</label>
       <input type="text" id="name" name="name" required>
-       <label for="first_name" data-i18n="first_name_us">Prénom:</label>
+       <label for="first_name" data-i18n="first_name">Prénom:</label>
        <input type="text" id="first_name" name="first name" required>
-       <label for="tel">Téléphone</label>
+       <label for="tel">Téléphone:</label>
        <input type="text" id="tel" name="tel">
-      <label for="email">Email:</label>
+      <label for="email" data-i18n="email">Email:</label>
       <input type="email" id="email" name="email">
 
       <label for="message" >Message:</label>
       <textarea id="message" name="message" required></textarea>
 
-      <button class="btn-envoi" type="submit" data-i18n="message_us">Envoyer le message</button>
+      <button class="btn-envoi" type="submit" data-i18n="send_button">Envoyer le message</button>
     </form>
  
   <div class="réseaux-sociaux">
