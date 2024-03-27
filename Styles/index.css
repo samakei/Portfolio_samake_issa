@@ -135,7 +135,7 @@ body {
 
 .card {
   width: 60%;
-  max-height: 450px;
+  height: 400px;
   border-radius: 25px;
   background: #333;
 }
