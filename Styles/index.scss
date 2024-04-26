@@ -101,6 +101,7 @@ font-family: Arial, sans-serif;
   .card-welcome img {
     width: 100%;
     height: 260px;
+    object-fit: cover;
     
   }
   .card-banner {
@@ -112,6 +113,7 @@ font-family: Arial, sans-serif;
   .card-banner img {
     width: 100%;
     height: 260px;
+    object-fit: cover;
     margin-right: auto;
     margin-left: auto;
     
@@ -136,6 +138,7 @@ img {
   width: 100%;
   height: 200px;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 h5 {
@@ -197,6 +200,7 @@ section h4{
 
 .about-me img{
   width: 300px;
+  object-fit: cover;
   height: 300px;
   display: flex;
   justify-content: center;
