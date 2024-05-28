@@ -1,4 +1,9 @@
 <?php
+// Fonction pour valider l'adresse e-mail
+function isValidEmail($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
 // Vérifiez si le formulaire a été soumis
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérez et assainissez les données du formulaire
@@ -7,6 +12,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = htmlspecialchars($_POST['tel'], ENT_QUOTES, 'UTF-8');
     $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
     $message = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
+
+    // Validez l'adresse e-mail
+    if (!isValidEmail($email)) {
+        echo 'Erreur : adresse e-mail invalide.';
+        exit;
+    }
 
     // Spécifiez votre adresse e-mail ici
     $to = 'samakeissa10@outlook.fr'; 
@@ -21,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message:\n$message\n";
 
     // En-têtes de l'e-mail
-    $headers = "From: $email" . "\r\n";
+    $headers = "From: samakeissa10@outlook.fr" . "\r\n"; // Utilisez une adresse e-mail de votre domaine
     $headers .= "Reply-To: $email" . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
