@@ -208,21 +208,31 @@
         <!-- formulaire de contact-->
     <div class="formulaire-container">
     <form id="contactForm" action="/forms/traitement.php" method="post">
-       <h4 data-i18n="title_contact">Contact</h4>
-      <label for="full_name" data-i18n="full_name">Nom complet:</label>
-      <input type="text" id="full_name" name="full_name" required>
-       <label for="first_name" data-i18n="first_name">Prénom:</label>
-       <input type="text" id="first_name" name="first_name" required>
-       <label for="tel">Téléphone:</label>
-       <input type="text" id="tel" name="tel">
-      <label for="email" data-i18n="email">Email:</label>
-      <input type="email" id="email" name="email">
+    <h4 data-i18n="title_contact">Contact</h4>
+    <label for="full_name" data-i18n="full_name">Nom complet:</label>
+    <input type="text" id="full_name" name="full_name" required>
+    <label for="first_name" data-i18n="first_name">Prénom:</label>
+    <input type="text" id="first_name" name="first_name" required>
+    <label for="tel">Téléphone:</label>
+    <input type="text" id="tel" name="tel">
+    <label for="email" data-i18n="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button class="btn-envoi" type="submit" data-i18n="send_button">Envoyer le message</button>
+</form>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        const email = document.getElementById('email').value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-      <label for="message" >Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        if (!emailPattern.test(email)) {
+            alert('Erreur : adresse e-mail invalide.');
+            event.preventDefault();
+        }
+    });
+</script>
 
-      <button class="btn-envoi" type="submit" data-i18n="send_button">Envoyer le message</button>
-    </form>
  
   <div class="réseaux-sociaux">
      <h5>Réseaux-sociaux</h5>
