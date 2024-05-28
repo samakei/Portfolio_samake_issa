@@ -54,6 +54,6 @@ function changeLanguage(language) {
 
 // Chargement des traductions des langues par défaut au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
-    loadTranslations('en'); // Chargement des traductions en anglais par défaut
+    loadTranslations('fr'); // Chargement des traductions en anglais par défaut
 });
 //fin//
