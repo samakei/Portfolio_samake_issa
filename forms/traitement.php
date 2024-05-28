@@ -43,3 +43,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Erreur : le message n\'a pas pu être envoyé.';
     }
 }
+?>
