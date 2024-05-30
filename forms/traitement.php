@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if(mail($to, $subject, $body, $headers)) {
         echo 'Le message a été envoyé avec succès.';
     } else {
+        
         echo 'Erreur : le message n\'a pas pu être envoyé.';
     }
 }
-?>
