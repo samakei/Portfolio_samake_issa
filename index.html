@@ -208,24 +208,18 @@
         <!-- formulaire de contact-->
     <div class="formulaire-container">
     <h4 data-i18n="title_contact">Contactez-moi</h4>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" netlify>
   <p>
-    <label>Votre Non: <input type="text" name="name" /></label>
+    <label>Name <input type="text" name="name" /></label>
   </p>
   <p>
-    <label>Votre Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label class="role">Votre rôle:<select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
+    <label>Email <input type="email" name="email" /></label>
   </p>
   <p>
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button class="btn-envoi" type="submit" data-i18n="send_button">Envoyer le message</button>
+    <button class="btn-envoi" type="submit">Send</button>
   </p>
 </form>
 
