@@ -109,6 +109,8 @@ body {
 .card-welcome img {
   width: 100%;
   height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-banner {
@@ -120,6 +122,8 @@ body {
 .card-banner img {
   width: 100%;
   height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: auto;
   margin-left: auto;
 }
@@ -143,6 +147,8 @@ body {
   width: 100%;
   height: 200px;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card h5 {
   color: #fff;
@@ -179,7 +185,7 @@ body {
   color: chartreuse;
 }
 
-/*paddinp 80px x 20px pour les sections*/
+/*paddinp 50px x 20px pour les sections*/
 section {
   padding: 50px 20px;
   max-width: 1750px;
@@ -199,6 +205,8 @@ section h4 {
 /** A propos de moi **/
 .about-me img {
   width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -348,10 +356,10 @@ section h4 {
 .formulaire-container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   background: #333;
+  padding: 20px;
+  border-radius: 5px;
   color: #fff;
 }
 
@@ -376,7 +384,7 @@ textarea {
 }
 
 textarea {
-  height: 150px;
+  height: 50px;
 }
 
 button {
