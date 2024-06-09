@@ -384,7 +384,7 @@ textarea {
 }
 
 textarea {
-  height: 50px;
+  height: 70px;
 }
 
 button {
@@ -620,5 +620,8 @@ footer {
   }
   .translete .button {
     flex-wrap: nowrap;
+  }
+  .textarea {
+    height: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
