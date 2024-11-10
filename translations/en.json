@@ -47,11 +47,14 @@
 
     "title_about": "about-me",
 
-    "description_about": "Currently in professional retraining and at the end of my web developer & integrator training at Openclassroom. I am currently looking for a job on a fixed-term, permanent or work-study basis because I actively want to deepen my skills as a web developer and web integrator, an essential subject today for working with new technologies. Holder of a locksmith CAP metalworker, obtained at the Françoise Dolto high school in Fontanil-Cornillon 38120 in 2015, plus RNCP level IV certificate mastery of locksmith troubleshooting and installer of all closures in Créteil 94000 November 2016.",
+    "description_about": "I am currently looking for an employer to do my work-study program as part of the React JavaScript Application Developer training, for a period of 12 months. This training, offered by OpenClassrooms, is carried out under a professionalization contract and includes a flexible rhythm of 3 to 4 days per week in your organization, with training days being established in agreement with you.\n\nThe skills developed during this training are immediately applicable, ensuring a quick contribution within your team. A dedicated mentor will follow me throughout my journey to maximize my learning and effectiveness. In addition, OpenClassrooms supports you at every stage, from recruitment to training, while simplifying the administrative management of work-study programs. For more information on work-study with OpenClassrooms, please visit the recruitment section: https://openclassrooms.com/fr/business/uplift.\n\nI remain at your disposal to arrange a meeting and discuss how I could join and strengthen your team.",
+    
 
     "title_contact": "Contact me",
     
     "send_button": "Send "
+    
+    
 
   }
 
