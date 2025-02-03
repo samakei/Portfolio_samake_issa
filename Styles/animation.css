@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .skill_live {
   animation: fillProgress 3s infinite ease-in-out;
   animation-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);

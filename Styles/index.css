@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
